@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FasterComp | Kompletná správa IT pre školy</title>
-  <meta name="description" content="FasterComp prináša servis a podporu IT pre školy. Kompletná správa sietí, predaj vybavenia a 12 rokov skúseností v školstve." />
+  <title>FasterComp | IT servis a správa pre školy</title>
+  <meta name="description" content="FasterComp poskytuje kompletnú správu IT, sietí a vybavenia pre školy. Servis, podpora a 12 rokov skúseností v školstve." />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,14 +16,14 @@
       <a class="logo" href="#top">Faster<span>Comp</span></a>
       <nav class="nav">
         <a href="#services">Služby</a>
-        <a href="#about">O nás</a>
-        <a href="#work">Realizácie</a>
+        <a href="#solutions">Riešenia</a>
+        <a href="#references">Referencie</a>
         <a href="#faq">FAQ</a>
         <a href="#contact">Kontakt</a>
       </nav>
       <div class="nav-cta">
-        <a class="btn outline" href="#contact">Kontakt</a>
-        <a class="btn solid" href="#contact">Mám záujem</a>
+        <a class="btn ghost" href="#contact">Kontakt</a>
+        <a class="btn primary" href="#contact">Mám záujem</a>
       </div>
       <button class="nav-toggle" aria-label="Otvorenie menu">
         <span></span><span></span><span></span>
@@ -35,20 +35,20 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <span class="pill">IT služby pre školy</span>
-          <h1>Kompletná správa IT, sietí a vybavenia pre školy, ktoré chcú pokoj.</h1>
+          <div class="pill">IT služby pre školy</div>
+          <h1>Kompletná správa IT, sietí a vybavenia pre školy, ktoré chcú mať pokoj.</h1>
           <p>
-            Servis a podpora so 12 rokmi skúseností v školstve. Stabilné siete, rýchly servis,
-            predvídateľné rozpočty a tím, ktorý komunikuje s riaditeľmi aj IT koordinátormi.
+            Servis a podpora s 12-ročnou praxou v školstve. Pre riaditeľov, učiteľov informatiky aj
+            zriaďovateľov, ktorí potrebujú spoľahlivého IT partnera.
           </p>
           <div class="hero-actions">
-            <a class="btn solid" href="#contact">Mám záujem</a>
-            <a class="btn outline" href="#services">Pozrieť služby</a>
+            <a class="btn primary" href="#contact">Mám záujem</a>
+            <a class="btn ghost" href="#services">Pozrieť služby</a>
           </div>
-          <div class="hero-meta">
+          <div class="hero-stats">
             <div>
               <strong>12+</strong>
-              <span>rokov praxe</span>
+              <span>rokov skúseností</span>
             </div>
             <div>
               <strong>180+</strong>
@@ -60,25 +60,29 @@
             </div>
           </div>
         </div>
-        <div class="hero-media">
-          <div class="hero-photo">
-            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80" alt="IT podpora v školskom prostredí" loading="lazy" />
-            <div class="hero-card">
-              <span>Monitoring siete</span>
-              <strong>Všetky systémy online</strong>
-              <small>24/7 dohľad a bezpečnosť</small>
+        <div class="hero-visual">
+          <div class="hero-card">
+            <span>Live monitoring</span>
+            <strong>Všetky systémy online</strong>
+            <p>24/7 dohľad, bezpečnosť, SLA dohody.</p>
+            <div class="hero-tags">
+              <span>GDPR</span>
+              <span>NIS2</span>
+              <span>Wi-Fi</span>
             </div>
           </div>
-          <div class="hero-gallery">
-            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=600&q=80" alt="Technológie v učebni" loading="lazy" />
-            <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=600&q=80" alt="Študenti s notebookmi" loading="lazy" />
+          <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80" alt="Technológie pre školy" loading="lazy" />
+          </div>
+          <div class="hero-image small">
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80" alt="IT tím v školskom prostredí" loading="lazy" />
           </div>
         </div>
       </div>
     </section>
 
-    <section class="ticker">
-      <div class="container ticker-inner">
+    <section class="marquee">
+      <div class="container marquee-inner">
         <span>Kompletná správa IT</span>
         <span>Servis a podpora</span>
         <span>Správa sietí</span>
@@ -92,137 +96,124 @@
       <div class="container section-heading">
         <div>
           <p class="eyebrow">Naše služby</p>
-          <h2>Komplexná IT správa navrhnutá pre školské prostredie.</h2>
+          <h2>Všetko, čo školské IT potrebuje na jednom mieste.</h2>
         </div>
-        <a class="btn outline" href="#contact">Získať ponuku</a>
+        <a class="btn ghost" href="#contact">Získajte ponuku</a>
       </div>
-      <div class="container services-grid">
+      <div class="container service-grid">
         <article class="service-card">
           <h3>Servis a podpora</h3>
-          <p>Helpdesk, SLA dohody, on-site aj vzdialená podpora. Všetko s jasným reportingom.</p>
+          <p>Helpdesk, on-site aj vzdialená podpora, SLA dohody a jasný reporting.</p>
           <ul>
             <li>Prioritné riešenie incidentov</li>
             <li>Pravidelné prehľady stavu</li>
             <li>Komunikácia s vedením školy</li>
           </ul>
-          <a href="#contact">Mám záujem</a>
         </article>
         <article class="service-card">
           <h3>Správa sietí</h3>
-          <p>Stabilná a bezpečná infraštruktúra bez výpadkov počas vyučovania.</p>
+          <p>Stabilné a bezpečné siete, segmentácia, monitoring a zálohovanie.</p>
           <ul>
             <li>Wi-Fi optimalizácia</li>
+            <li>Firewall a bezpečnostné politiky</li>
             <li>Zálohy a obnova</li>
-            <li>Bezpečnostné politiky</li>
           </ul>
-          <a href="#contact">Mám záujem</a>
         </article>
         <article class="service-card">
           <h3>Dodávka vybavenia</h3>
-          <p>Notebooky, interaktívne tabule aj AV technika s inštaláciou a financovaním.</p>
+          <p>Notebooky, tabule, AV technika, logistika a plán obnovy zariadení.</p>
           <ul>
             <li>Výber podľa rozpočtu</li>
-            <li>Logistika a servis</li>
-            <li>Plán obnovy techniky</li>
+            <li>Inštalácia a servis</li>
+            <li>Financovanie a plán obnovy</li>
           </ul>
-          <a href="#contact">Mám záujem</a>
         </article>
       </div>
     </section>
 
-    <section class="section dark" id="about">
-      <div class="container about-grid">
+    <section id="solutions" class="section split">
+      <div class="container split-grid">
         <div>
-          <p class="eyebrow">O nás</p>
-          <h2>12 rokov skúseností v školstve. IT riešime tak, aby škola fungovala bez stresu.</h2>
+          <p class="eyebrow">Riešenia</p>
+          <h2>Kompletná správa IT pre školy, ktoré nechcú riešiť technické výpadky.</h2>
           <p>
-            Komunikujeme s riaditeľmi, učiteľmi informatiky aj zriaďovateľmi. Naša práca je
-            predvídateľná, proaktívna a orientovaná na bezpečnosť a výučbu.
+            Získate tím, ktorý pozná školské procesy a vie komunikovať s riaditeľmi, učiteľmi informatiky
+            aj zriaďovateľmi. Všetko v jednom balíku.
           </p>
-          <div class="about-pills">
-            <span>24/7 dohľad</span>
-            <span>GDPR &amp; NIS2</span>
-            <span>Proaktívny servis</span>
-            <span>Školský helpdesk</span>
-          </div>
+          <a class="btn primary" href="#contact">Rezervovať audit</a>
         </div>
-        <div class="about-panel">
+        <div class="split-cards">
           <div>
             <strong>98%</strong>
             <span>spokojnosť škôl</span>
           </div>
           <div>
-            <strong>180+</strong>
-            <span>partnerov</span>
+            <strong>24/7</strong>
+            <span>monitoring systémov</span>
           </div>
           <div>
-            <strong>24h</strong>
-            <span>odpoveď na požiadavku</span>
+            <strong>3 roky</strong>
+            <span>plán obnovy techniky</span>
           </div>
-          <a class="btn solid" href="#contact">Naplánovať audit</a>
+          <div>
+            <strong>GDPR</strong>
+            <span>bezpečnostné štandardy</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="work" class="section">
+    <section class="section gallery" id="references">
       <div class="container section-heading">
         <div>
-          <p class="eyebrow">Realizácie / galéria</p>
-          <h2>Ukážky moderných škôl, ktoré spravujeme.</h2>
+          <p class="eyebrow">Galéria &amp; realizácie</p>
+          <h2>Učebne a infraštruktúra, ktoré spravujeme.</h2>
         </div>
-        <a class="btn outline" href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+        <a class="btn ghost" href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
       </div>
-      <div class="container work-grid">
+      <div class="container gallery-grid">
         <figure>
-          <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=800&q=80" alt="Moderná školská knižnica" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=900&q=80" alt="Moderná školská knižnica" loading="lazy" />
           <figcaption>Učebne &amp; siete</figcaption>
         </figure>
         <figure>
-          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Sieťové technológie" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80" alt="Sieťové technológie" loading="lazy" />
           <figcaption>Wi-Fi upgrade</figcaption>
         </figure>
         <figure>
-          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Interaktívna výučba" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80" alt="Interaktívna výučba" loading="lazy" />
           <figcaption>Interaktívne tabule</figcaption>
         </figure>
         <figure>
-          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Serverová infraštruktúra" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80" alt="Serverová infraštruktúra" loading="lazy" />
           <figcaption>Cloudové riešenia</figcaption>
-        </figure>
-        <figure>
-          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Školenia pre učiteľov" loading="lazy" />
-          <figcaption>Školenia</figcaption>
-        </figure>
-        <figure>
-          <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=800&q=80" alt="Notebooky pre školy" loading="lazy" />
-          <figcaption>Obnova vybavenia</figcaption>
         </figure>
       </div>
     </section>
 
-    <section class="section split" id="testimonials">
-      <div class="container split-grid">
+    <section class="section testimonials">
+      <div class="container section-heading">
         <div>
           <p class="eyebrow">Referencie</p>
           <h2>Školy nám dôverujú pre rýchlu reakciu a spoľahlivosť.</h2>
         </div>
-        <div class="testimonial-cards">
-          <article>
-            <p>„Komunikácia je rýchla a vecná. Vďaka FasterComp sa učebne nestávajú problémom.“</p>
-            <strong>ZŠ Komenského</strong>
-            <span>Google Business, 5★</span>
-          </article>
-          <article>
-            <p>„Prebrali kompletnú správu siete a učitelia môžu riešiť iba výučbu.“</p>
-            <strong>SOŠ technická</strong>
-            <span>Referencie, 5★</span>
-          </article>
-          <article>
-            <p>„Výmena notebookov a interaktívnych tabúľ prebehla hladko a načas.“</p>
-            <strong>Gymnázium Nové Mesto</strong>
-            <span>Google Business, 5★</span>
-          </article>
-        </div>
+      </div>
+      <div class="container testimonial-grid">
+        <article>
+          <p>„Komunikácia je rýchla a vecná. Vďaka FasterComp sa učebne nestávajú problémom.“</p>
+          <strong>ZŠ Komenského</strong>
+          <span>Google Business, 5★</span>
+        </article>
+        <article>
+          <p>„Prebrali kompletnú správu siete a učitelia môžu riešiť iba výučbu.“</p>
+          <strong>SOŠ technická</strong>
+          <span>Referencie, 5★</span>
+        </article>
+        <article>
+          <p>„Výmena notebookov a interaktívnych tabúľ prebehla hladko a načas.“</p>
+          <strong>Gymnázium Nové Mesto</strong>
+          <span>Google Business, 5★</span>
+        </article>
       </div>
     </section>
 
@@ -293,7 +284,7 @@
             Správa
             <textarea name="message" rows="5" placeholder="Popíšte vašu potrebu..." required></textarea>
           </label>
-          <button class="btn solid" type="submit">Odoslať dopyt</button>
+          <button class="btn primary" type="submit">Odoslať dopyt</button>
           <p class="form-note">Kliknutím odosielate správu priamo na e-mail FasterComp.</p>
         </form>
       </div>
@@ -308,7 +299,7 @@
         </div>
         <form class="newsletter-form">
           <input type="email" placeholder="Váš e-mail" required />
-          <button class="btn outline" type="submit">Chcem odoberať</button>
+          <button class="btn ghost" type="submit">Chcem odoberať</button>
         </form>
       </div>
     </section>
@@ -318,7 +309,7 @@
     <div class="container footer-grid">
       <div>
         <a class="logo" href="#top">Faster<span>Comp</span></a>
-        <p>IT služby pre školy s dôrazom na spoľahlivosť, bezpečnosť a jasnú komunikáciu.</p>
+        <p>IT služby pre školy s dôrazom na spoľahlivosť a bezpečnosť.</p>
         <div class="social-links">
           <a href="https://facebook.com" target="_blank" rel="noreferrer">Facebook</a>
           <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
@@ -327,8 +318,8 @@
       <div>
         <h4>Rýchle odkazy</h4>
         <a href="#services">Služby</a>
-        <a href="#about">O nás</a>
-        <a href="#work">Realizácie</a>
+        <a href="#solutions">Riešenia</a>
+        <a href="#references">Referencie</a>
         <a href="#contact">Kontakt</a>
       </div>
       <div>
