@@ -238,42 +238,46 @@
     </section>
 
     <section id="reviews" class="section reviews">
-      <div class="container section-heading">
-        <div>
-          <span class="pill">Customer Reviews</span>
-          <h2>Školy nám dôverujú po celom Slovensku</h2>
-        </div>
-        <div class="review-controls">
-          <button class="control" type="button" data-dir="prev" aria-label="Predchádzajúca referencia">←</button>
-          <button class="control" type="button" data-dir="next" aria-label="Nasledujúca referencia">→</button>
-        </div>
+      <div class="container reviews-heading" data-reveal>
+        <span class="pill">Customer Reviews</span>
+        <h2>Overené školami, ktoré chcú pokojné IT.</h2>
       </div>
-      <div class="container review-grid" data-testimonials>
-        <article class="review highlight" data-reveal>
+      <div class="container review-grid" data-reveal>
+        <article class="review stat highlight">
           <h3>60%</h3>
-          <p>Redukcia administratívy pre vedenie školy.</p>
+          <p>Menej administratívy pre vedenie školy.</p>
         </article>
-        <article class="review dark" data-reveal>
-          <p>„Podpora nám ušetrila desiatky hodín mesačne a všetko ide podľa dohôd."</p>
+        <article class="review testimonial dark">
+          <p>„FasterComp nám znížil čas riešenia požiadaviek na polovicu. Učitelia majú viac času na výučbu."</p>
           <div class="review-meta">
-            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=200&q=80" alt="ZŠ Komenského" />
+            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80" alt="ZŠ Borodáčova" />
             <div>
-              <strong>ZŠ Komenského</strong>
-              <span>Riaditeľka školy</span>
+              <strong>ZŠ Borodáčova</strong>
+              <span>Vedúca IT správy</span>
             </div>
           </div>
         </article>
-        <article class="review" data-reveal>
+        <article class="review stat light">
           <h3>45%</h3>
-          <p>Rýchlejšie riešenie incidentov.</p>
+          <p>Vyšší rozpočet získaný späť vďaka optimalizácii.</p>
         </article>
-        <article class="review" data-reveal>
+        <article class="review stat light">
           <h3>35%</h3>
-          <p>Vyššia produktivita IT koordinátorov.</p>
+          <p>Rýchlejšie vybavovanie požiadaviek učiteľov.</p>
         </article>
-        <article class="review accent" data-reveal>
-          <h3>€45k</h3>
-          <p>Priemerná ročná úspora na rozpočte IT.</p>
+        <article class="review stat accent">
+          <h3>€420k</h3>
+          <p>Úspory na IT nákupoch v priemere ročne.</p>
+        </article>
+        <article class="review testimonial light">
+          <p>„Máme prehľad o celej infraštruktúre a rýchle reakcie na incidenty. Všetko funguje bez stresu."</p>
+          <div class="review-meta">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=200&q=80" alt="Gymnázium Nové Mesto" />
+            <div>
+              <strong>Gymnázium Nové Mesto</strong>
+              <span>Zástupca riaditeľa</span>
+            </div>
+          </div>
         </article>
       </div>
     </section>
@@ -281,28 +285,48 @@
     <section id="faq" class="section faq">
       <div class="container faq-layout">
         <div class="faq-intro">
-          <span class="tag">FAQ</span>
+          <span class="pill">FAQ</span>
           <h2>Často kladené otázky</h2>
-          <p>Nejasnosti? Tu sú odpovede na najčastejšie otázky.</p>
+          <p>Získajte rýchle odpovede na to, čo školy zaujíma najviac.</p>
           <a class="btn ghost" href="#contact">Spýtať sa</a>
         </div>
-        <div class="faq-grid">
-          <details open>
-            <summary>Ako rýchlo viete reagovať na požiadavku?</summary>
-            <p>Štandardne do 2 hodín počas pracovných dní. Pri kritických incidentoch máme pohotovosť 24/7.</p>
-          </details>
-          <details>
-            <summary>Viete prevziať aj existujúcu infraštruktúru?</summary>
-            <p>Áno, urobíme audit, navrhneme plán a postupne prevezmeme správu bez prerušenia výučby.</p>
-          </details>
-          <details>
-            <summary>Ako funguje dodávka vybavenia?</summary>
-            <p>Navrhneme vhodné riešenie, pripravíme rozpočet a zabezpečíme nákup, dopravu aj inštaláciu.</p>
-          </details>
-          <details>
-            <summary>Je možné integrovať Google Business recenzie?</summary>
-            <p>Áno, recenzie vieme načítavať automaticky a spravovať ich v administrácii.</p>
-          </details>
+        <div class="faq-grid" data-faq>
+          <div class="faq-item is-open">
+            <button class="faq-question" type="button">
+              Ako rýchlo reagujete na požiadavky?
+              <span class="faq-icon" aria-hidden="true">⌄</span>
+            </button>
+            <div class="faq-answer">
+              Štandardne do 2 hodín počas pracovných dní. Pri kritických incidentoch máme pohotovosť 24/7.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              Viete prevziať existujúcu infraštruktúru?
+              <span class="faq-icon" aria-hidden="true">⌄</span>
+            </button>
+            <div class="faq-answer">
+              Áno, vykonáme audit, navrhneme plán a postupne prevezmeme správu bez prerušenia výučby.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              Ako funguje dodávka vybavenia?
+              <span class="faq-icon" aria-hidden="true">⌄</span>
+            </button>
+            <div class="faq-answer">
+              Navrhneme vhodné riešenie, pripravíme rozpočet a zabezpečíme nákup, dopravu aj inštaláciu.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              Aké reporty dostaneme?
+              <span class="faq-icon" aria-hidden="true">⌄</span>
+            </button>
+            <div class="faq-answer">
+              Mesačné KPI reporty, zoznam zásahov, plán obnovy a odporúčania pre vedenie školy.
+            </div>
+          </div>
         </div>
       </div>
     </section>

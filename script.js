@@ -144,36 +144,18 @@ if (serviceNav) {
   });
 }
 
-const reviewTrack = document.querySelector("[data-testimonials]");
-const controls = document.querySelectorAll(".control");
-let activeIndex = 0;
-
-const updateReviews = () => {
-  if (!reviewTrack) return;
-  const cards = reviewTrack.querySelectorAll(".review");
-  cards.forEach((card, index) => {
-    card.style.display = index >= activeIndex && index < activeIndex + 3 ? "block" : "none";
+const faqSection = document.querySelector("[data-faq]");
+if (faqSection) {
+  const items = Array.from(faqSection.querySelectorAll(".faq-item"));
+  items.forEach((item) => {
+    const button = item.querySelector(".faq-question");
+    if (!button) return;
+    button.addEventListener("click", () => {
+      const isOpen = item.classList.contains("is-open");
+      items.forEach((entry) => entry.classList.remove("is-open"));
+      if (!isOpen) {
+        item.classList.add("is-open");
+      }
+    });
   });
-};
-
-if (reviewTrack) {
-  updateReviews();
-  setInterval(() => {
-    const cards = reviewTrack.querySelectorAll(".review");
-    activeIndex = (activeIndex + 1) % Math.max(cards.length - 2, 1);
-    updateReviews();
-  }, 7000);
 }
-
-controls.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    const cards = reviewTrack ? reviewTrack.querySelectorAll(".review") : [];
-    if (!cards.length) return;
-    if (btn.dataset.dir === "next") {
-      activeIndex = (activeIndex + 1) % Math.max(cards.length - 2, 1);
-    } else {
-      activeIndex = Math.max(activeIndex - 1, 0);
-    }
-    updateReviews();
-  });
-});
