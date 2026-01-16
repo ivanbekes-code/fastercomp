@@ -23,11 +23,11 @@
         </span>
         Faster<span>Comp</span>
       </a>
-      <nav class="nav-links">
-        <a href="#benefits">Výhody</a>
+      <nav class="nav-links" id="primary-navigation">
+        <a href="#hero">Úvod</a>
         <a href="#services">Služby</a>
-        <a href="#process">Proces</a>
-        <a href="#impact">Výsledky</a>
+        <a href="#benefits">Výhody</a>
+        <a href="#reviews">Referencie</a>
         <a href="#faq">FAQ</a>
         <a href="#contact">Kontakt</a>
       </nav>
@@ -35,253 +35,156 @@
         <a class="btn ghost" href="#contact">Kontakt</a>
         <a class="btn primary" href="#contact">Mám záujem</a>
       </div>
-      <button class="nav-toggle" aria-label="Otvorenie menu">
+      <button class="nav-toggle" type="button" aria-label="Otvorenie menu" aria-controls="primary-navigation" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
   <main id="top">
-    <section class="hero">
+    <section id="hero" class="hero">
       <div class="glow glow-left"></div>
       <div class="glow glow-right"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="tag">Prémiové IT služby pre školy</p>
-          <h1>
-            Kompletná správa IT, ktorá dáva školám <span class="accent">pokoj</span>,
-            <span class="accent">bezpečnosť</span> a rýchlu podporu.
-          </h1>
-          <p class="lead">
-            12 rokov skúseností v školstve. Riešime siete, servis aj vybavenie s jasným plánom,
-            reportami a osobným prístupom k vedeniu školy.
-          </p>
-          <div class="hero-actions">
-            <a class="btn primary" href="#contact">Chcem konzultáciu</a>
-            <a class="btn ghost" href="#services">Pozrieť služby</a>
-          </div>
+      <div class="container hero-content">
+        <span class="tag">Prémiové IT služby pre školy</span>
+        <h1>
+          Najchytrejší spôsob, ako získať <span class="accent">pokoj</span>
+          a <span class="accent">stabilné IT</span> pre školu.
+        </h1>
+        <p class="lead">
+          Servis, siete a vybavenie pod jednou strechou. Spravujeme školské IT tak, aby ste
+          mali prehľad, bezpečnosť a rýchle riešenia bez stresu.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#contact">Chcem konzultáciu</a>
+          <a class="btn ghost" href="#services">Pozrieť služby</a>
         </div>
-        <div class="hero-card" data-reveal>
-          <div class="hero-card-top">
-            <span class="badge">SLA servis</span>
-            <span class="badge">GDPR</span>
-            <span class="badge">NIS2</span>
-          </div>
-          <h3>Škola pod kontrolou</h3>
-          <p>Monitoring siete, bezpečnostné politiky a servisné zásahy bez čakania.</p>
-          <div class="hero-progress">
-            <div>
-              <span>Bezpečnosť</span>
-              <strong>98%</strong>
-            </div>
-            <div>
-              <span>Spokojnosť</span>
-              <strong>5★</strong>
-            </div>
-          </div>
-          <a class="btn ghost" href="#contact">Rezervovať audit</a>
+        <div class="hero-media" data-reveal>
+          <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1400&q=80" alt="Moderná školská učebňa" />
         </div>
       </div>
-      <div class="hero-stats">
-        <div>
-          <strong>12+</strong>
-          <span>rokov praxe</span>
+      <div class="container stats" id="stats">
+        <div class="stat">
+          <strong data-count="12">0</strong>
+          <span>rokov skúseností</span>
         </div>
-        <div>
-          <strong>180+</strong>
+        <div class="stat">
+          <strong data-count="180">0</strong>
           <span>škôl v podpore</span>
         </div>
-        <div>
-          <strong>2h</strong>
-          <span>reakčný čas</span>
+        <div class="stat">
+          <strong data-count="2">0</strong>
+          <span>hodiny reakčný čas</span>
         </div>
-      </div>
-    </section>
-
-    <section id="benefits" class="section benefits">
-      <div class="container section-heading">
-        <div>
-          <p class="tag">Výhody spolupráce</p>
-          <h2>Rýchla reakcia, stabilné siete a <span class="accent">férové podmienky</span>.</h2>
-        </div>
-      </div>
-      <div class="container benefits-grid">
-        <article data-reveal>
-          <span class="icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l7 4v6c0 5-3.5 9.7-7 10-3.5-.3-7-5-7-10V6l7-4z"/></svg>
-          </span>
-          <h3>Bezpečné IT prostredie</h3>
-          <p>Segmentácia siete, dohľad a ochrana dát v súlade s GDPR a NIS2.</p>
-        </article>
-        <article data-reveal>
-          <span class="icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 100 18 9 9 0 000-18zm1 5h-2v5l4 2 1-1.7-3-1.3V8z"/></svg>
-          </span>
-          <h3>Rýchla podpora</h3>
-          <p>Helpdesk, SLA dohody a servisné výjazdy do 2 hodín.</p>
-        </article>
-        <article data-reveal>
-          <span class="icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v4H3V5zm0 6h18v8H3v-8zm4 2v4h4v-4H7zm6 0v4h4v-4h-4z"/></svg>
-          </span>
-          <h3>Predvídateľný rozpočet</h3>
-          <p>Plán obnovy techniky, reporty a prehľadné náklady.</p>
-        </article>
       </div>
     </section>
 
     <section id="services" class="section services">
-      <div class="container section-heading">
-        <div>
-          <p class="tag">Naše služby</p>
-          <h2>Kompletná IT správa, ktorú <span class="accent">škola potrebuje</span>.</h2>
+      <div class="container services-grid">
+        <div class="services-sticky">
+          <span class="tag">Key tools</span>
+          <h2>Správa IT, ktorá sa prispôsobí škole.</h2>
+          <p>Vyberte si oblasť a sledujte detaily vpravo. Sekcia zostáva fixná, aby ste mali kontext.</p>
+          <div class="services-nav" data-service-nav>
+            <button class="service-link active" data-target="service-support">Servis a podpora</button>
+            <button class="service-link" data-target="service-network">Správa sietí</button>
+            <button class="service-link" data-target="service-hardware">Dodávka vybavenia</button>
+            <button class="service-link" data-target="service-training">Školenia &amp; onboarding</button>
+          </div>
         </div>
-        <a class="btn ghost" href="#contact">Získať ponuku</a>
-      </div>
-      <div class="container service-tabs" data-service-tabs>
-        <div class="tab-list">
-          <button class="tab active" type="button" data-tab="service-support">
-            <span class="icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v12H4V4zm2 2v8h12V6H6zm-2 12h16v2H4v-2z"/></svg>
-            </span>
-            Servis a podpora
-          </button>
-          <button class="tab" type="button" data-tab="service-network">
-            <span class="icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8 4v6c0 4.4-3.5 8.7-8 10-4.5-1.3-8-5.6-8-10V6l8-4zm0 6a3 3 0 00-3 3v3h6v-3a3 3 0 00-3-3z"/></svg>
-            </span>
-            Správa sietí
-          </button>
-          <button class="tab" type="button" data-tab="service-hardware">
-            <span class="icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h14a2 2 0 012 2v10a2 2 0 01-2 2h-4l-3 3-3-3H5a2 2 0 01-2-2V5a2 2 0 012-2z"/></svg>
-            </span>
-            Dodávka vybavenia
-          </button>
-          <button class="tab" type="button" data-tab="service-training">
-            <span class="icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16l-8 5-8-5zm0 7h16v5H4v-5zm4 2v1h8v-1H8z"/></svg>
-            </span>
-            Školenia &amp; onboarding
-          </button>
-        </div>
-        <div class="tab-panels">
-          <article class="tab-panel active" id="service-support" data-reveal>
-            <div class="panel-card">
-              <h3>Servis a podpora</h3>
-              <p>Helpdesk, on-site aj vzdialená podpora, SLA dohody a jasné reporty.</p>
-              <a class="btn ghost" href="#contact">Rezervovať podporu</a>
-            </div>
-            <div class="panel-list">
+        <div class="services-panels">
+          <article id="service-support" class="service-panel" data-reveal>
+            <h3>Servis a podpora</h3>
+            <p>Helpdesk, SLA dohody a servisné zásahy do 2 hodín.</p>
+            <div class="service-cards">
               <div>
-                <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12l4-4 4 4-4 4-4-4zm10-4h8v2h-8V8zm0 6h8v2h-8v-2z"/></svg></span>
+                <span class="icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v12H4V4zm2 2v8h12V6H6zm-2 12h16v2H4v-2z"/></svg>
+                </span>
                 <div>
                   <strong>Prioritné incidenty</strong>
-                  <p>Riešime kritické výpadky do 2 hodín.</p>
+                  <p>Rýchla reakcia na kritické výpadky.</p>
                 </div>
               </div>
               <div>
-                <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v6H4V4zm0 8h16v8H4v-8zm4 2v4h4v-4H8z"/></svg></span>
+                <span class="icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v4H3V5zm0 6h18v8H3v-8zm4 2v4h4v-4H7zm6 0v4h4v-4h-4z"/></svg>
+                </span>
                 <div>
-                  <strong>Reporting pre vedenie</strong>
-                  <p>Prehľadné mesačné reporty a plán obnovy.</p>
-                </div>
-              </div>
-              <div>
-                <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a5 5 0 015 5v2h2v4h-2v2a5 5 0 01-10 0v-2H5V9h2V7a5 5 0 015-5z"/></svg></span>
-                <div>
-                  <strong>Komunikácia bez stresu</strong>
-                  <p>Jeden kontaktný bod pre učiteľov aj riaditeľov.</p>
+                  <strong>Reporting</strong>
+                  <p>Prehľadné mesačné reporty pre vedenie.</p>
                 </div>
               </div>
             </div>
           </article>
-          <article class="tab-panel" id="service-network" data-reveal>
-            <div class="panel-card">
-              <h3>Správa sietí</h3>
-              <p>Bezpečné siete, monitoring a stabilné Wi-Fi pre učebne.</p>
-              <a class="btn ghost" href="#contact">Získať audit siete</a>
-            </div>
-            <div class="panel-list">
+          <article id="service-network" class="service-panel" data-reveal>
+            <h3>Správa sietí</h3>
+            <p>Stabilná Wi-Fi, monitoring a bezpečnostné politiky.</p>
+            <div class="service-cards">
               <div>
-                <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4a8 8 0 018 8h-2a6 6 0 00-6-6V4zm0 6a2 2 0 012 2h-2v-2zM6 12a6 6 0 016-6V4a8 8 0 00-8 8h2z"/></svg></span>
+                <span class="icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4a8 8 0 018 8h-2a6 6 0 00-6-6V4zm0 6a2 2 0 012 2h-2v-2zM6 12a6 6 0 016-6V4a8 8 0 00-8 8h2z"/></svg>
+                </span>
                 <div>
                   <strong>Wi-Fi optimalizácia</strong>
                   <p>Pokrytie všetkých učební bez výpadkov.</p>
                 </div>
               </div>
               <div>
-                <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8 4v6c0 4.4-3.5 8.7-8 10-4.5-1.3-8-5.6-8-10V6l8-4z"/></svg></span>
+                <span class="icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8 4v6c0 4.4-3.5 8.7-8 10-4.5-1.3-8-5.6-8-10V6l8-4z"/></svg>
+                </span>
                 <div>
-                  <strong>Bezpečnostné politiky</strong>
-                  <p>Firewall, segmentácia a GDPR štandardy.</p>
-                </div>
-              </div>
-              <div>
-                <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4V6zm2 2v8h12V8H6z"/></svg></span>
-                <div>
-                  <strong>Zálohy a obnova</strong>
-                  <p>Rýchla obnova po výpadkoch.</p>
+                  <strong>Bezpečnosť</strong>
+                  <p>Firewall, segmentácia, GDPR štandardy.</p>
                 </div>
               </div>
             </div>
           </article>
-          <article class="tab-panel" id="service-hardware" data-reveal>
-            <div class="panel-card">
-              <h3>Dodávka vybavenia</h3>
-              <p>Notebooky, tabule, AV technika a logistika na mieru školy.</p>
-              <a class="btn ghost" href="#contact">Navrhnúť vybavenie</a>
-            </div>
-            <div class="panel-list">
+          <article id="service-hardware" class="service-panel" data-reveal>
+            <h3>Dodávka vybavenia</h3>
+            <p>Notebooky, tabule, AV technika a servis.</p>
+            <div class="service-cards">
               <div>
-                <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v10H4V5zm2 2v6h12V7H6zm-2 10h16v2H4v-2z"/></svg></span>
+                <span class="icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h14a2 2 0 012 2v10a2 2 0 01-2 2h-4l-3 3-3-3H5a2 2 0 01-2-2V5a2 2 0 012-2z"/></svg>
+                </span>
                 <div>
                   <strong>Výber podľa rozpočtu</strong>
-                  <p>Optimálne zostavy pre učebne.</p>
+                  <p>Odporúčania na mieru školy.</p>
                 </div>
               </div>
               <div>
-                <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h13v10H3V7zm13 3h5l-2 4h-3v-4z"/></svg></span>
+                <span class="icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h13v10H3V7zm13 3h5l-2 4h-3v-4z"/></svg>
+                </span>
                 <div>
-                  <strong>Logistika a inštalácia</strong>
-                  <p>Doručenie, zapojenie a testovanie.</p>
-                </div>
-              </div>
-              <div>
-                <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8a4 4 0 014 4h-2a2 2 0 00-2-2V8zm-2 0v2a2 2 0 00-2 2H6a4 4 0 014-4zm-4 6h2a2 2 0 002 2v2a4 4 0 01-4-4zm10 0h2a4 4 0 01-4 4v-2a2 2 0 002-2z\"/></svg></span>
-                <div>
-                  <strong>Plán obnovy</strong>
-                  <p>3-ročný cyklus obnovy techniky.</p>
+                  <strong>Logistika</strong>
+                  <p>Doručenie, inštalácia, servis.</p>
                 </div>
               </div>
             </div>
           </article>
-          <article class="tab-panel" id="service-training" data-reveal>
-            <div class="panel-card">
-              <h3>Školenia &amp; onboarding</h3>
-              <p>Podpora pre učiteľov informatiky aj vedenie školy.</p>
-              <a class="btn ghost" href="#contact">Naplánovať školenie</a>
-            </div>
-            <div class="panel-list">
+          <article id="service-training" class="service-panel" data-reveal>
+            <h3>Školenia &amp; onboarding</h3>
+            <p>Podpora učiteľov a onboarding nových pracovníkov.</p>
+            <div class="service-cards">
               <div>
-                <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5zm0 7l6 3-6 3-6-3 6-3zm0 6l6 3-6 3-6-3 6-3z"/></svg></span>
+                <span class="icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5zm0 7l6 3-6 3-6-3 6-3zm0 6l6 3-6 3-6-3 6-3z"/></svg>
+                </span>
                 <div>
-                  <strong>Rýchly onboarding</strong>
-                  <p>Adaptácia nových učiteľov.</p>
+                  <strong>Onboarding</strong>
+                  <p>Rýchle zapracovanie nových kolegov.</p>
                 </div>
               </div>
               <div>
-                <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l4 8H8l4-8zm-6 10h12v10H6V12zm2 2v6h8v-6H8z"/></svg></span>
-                <div>
-                  <strong>Bezpečnostné školenia</strong>
-                  <p>Prevencia a práca s citlivými dátami.</p>
-                </div>
-              </div>
-              <div>
-                <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v2H4V5zm0 6h16v2H4v-2zm0 6h16v2H4v-2z\"/></svg></span>
+                <span class="icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v2H4V5zm0 6h16v2H4v-2zm0 6h16v2H4v-2z"/></svg>
+                </span>
                 <div>
                   <strong>Praktické manuály</strong>
-                  <p>Rýchle návody a dokumentácia.</p>
+                  <p>Jasná dokumentácia pre školu.</p>
                 </div>
               </div>
             </div>
@@ -290,101 +193,87 @@
       </div>
     </section>
 
-    <section id="process" class="section process">
-      <div class="container process-grid">
-        <div>
-          <p class="tag">Jednoduchý postup</p>
-          <h2>Jasný proces od auditu až po <span class="accent">stabilné IT</span>.</h2>
-          <p>Všetko nastavíme tak, aby škola fungovala bez stresu a výpadkov.</p>
-        </div>
-        <div class="process-cards">
-          <div data-reveal>
-            <span>Krok 1</span>
-            <h3>Audit a plán</h3>
-            <p>Analyzujeme sieť, techniku a nastavíme priority.</p>
-          </div>
-          <div data-reveal>
-            <span>Krok 2</span>
-            <h3>Implementácia</h3>
-            <p>Nasadíme riešenia, monitoring a servisné dohody.</p>
-          </div>
-          <div data-reveal>
-            <span>Krok 3</span>
-            <h3>Stála podpora</h3>
-            <p>Pomoc, reporting a pravidelná údržba.</p>
-          </div>
-        </div>
+    <section id="benefits" class="section power-pack">
+      <div class="container center-heading" data-reveal>
+        <span class="tag">Power Pack</span>
+        <h2>Prečo si školy vyberajú FasterComp</h2>
+        <p>Jednoduchá správa, rýchla pomoc a výsledky, ktoré vidno v praxi.</p>
+      </div>
+      <div class="container power-grid">
+        <article data-reveal>
+          <h3>Rýchla reakcia</h3>
+          <p>Okamžité riešenia kritických incidentov.</p>
+        </article>
+        <article data-reveal>
+          <h3>Bezpečné dáta</h3>
+          <p>Zálohy, GDPR a bezpečnostné politiky.</p>
+        </article>
+        <article data-reveal>
+          <h3>Transparentný rozpočet</h3>
+          <p>Plán obnovy techniky bez prekvapení.</p>
+        </article>
       </div>
     </section>
 
     <section id="impact" class="section impact">
       <div class="container impact-grid">
-        <div class="impact-card">
-          <p class="tag">Výsledky</p>
-          <h2>Merateľné výsledky v praxi.</h2>
-          <p>Školy šetria čas, rozpočty aj nervy – technika funguje, učebne bežia.</p>
-          <div class="impact-stats">
-            <div>
-              <strong>98%</strong>
-              <span>spokojnosť škôl</span>
-            </div>
-            <div>
-              <strong>1500+</strong>
-              <span>servisných zásahov</span>
-            </div>
-            <div>
-              <strong>24/7</strong>
-              <span>monitoring</span>
-            </div>
-          </div>
-        </div>
         <div class="impact-media" data-reveal>
-          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=80" alt="IT správa" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80" alt="IT správa" />
+        </div>
+        <div class="impact-cards">
+          <article class="impact-card" data-reveal>
+            <h3>60%</h3>
+            <p>Zníženie administratívy pre IT koordinátorov.</p>
+          </article>
+          <article class="impact-card highlight" data-reveal>
+            <h3>98%</h3>
+            <p>Spokojnosť škôl s kvalitou podpory.</p>
+          </article>
+          <article class="impact-card" data-reveal>
+            <h3>24/7</h3>
+            <p>Dohľad nad sieťami a kľúčovými systémami.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section testimonials">
-      <div class="container section-heading testimonials-heading">
+    <section id="reviews" class="section reviews">
+      <div class="container section-heading">
         <div>
-          <p class="tag">Referencie</p>
-          <h2>Školy, ktoré nám dôverujú.</h2>
+          <span class="pill">Customer Reviews</span>
+          <h2>Školy nám dôverujú po celom Slovensku</h2>
         </div>
-        <div class="testimonial-controls">
+        <div class="review-controls">
           <button class="control" type="button" data-dir="prev" aria-label="Predchádzajúca referencia">←</button>
           <button class="control" type="button" data-dir="next" aria-label="Nasledujúca referencia">→</button>
         </div>
       </div>
-      <div class="container testimonial-track" data-testimonials>
-        <article class="testimonial">
-          <div class="stars">★★★★★</div>
-          <p>„Komunikácia je rýchla a vecná. Vďaka FasterComp sa učebne nestávajú problémom.“</p>
-          <strong>ZŠ Komenského</strong>
-          <span>Google Business</span>
+      <div class="container review-grid" data-testimonials>
+        <article class="review highlight" data-reveal>
+          <h3>60%</h3>
+          <p>Redukcia administratívy pre vedenie školy.</p>
         </article>
-        <article class="testimonial">
-          <div class="stars">★★★★★</div>
-          <p>„Prebrali kompletnú správu siete a učitelia môžu riešiť iba výučbu.“</p>
-          <strong>SOŠ technická</strong>
-          <span>Referencie</span>
+        <article class="review dark" data-reveal>
+          <p>„Podpora nám ušetrila desiatky hodín mesačne a všetko ide podľa dohôd."</p>
+          <div class="review-meta">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=200&q=80" alt="ZŠ Komenského" />
+            <div>
+              <strong>ZŠ Komenského</strong>
+              <span>Riaditeľka školy</span>
+            </div>
+          </div>
         </article>
-        <article class="testimonial">
-          <div class="stars">★★★★★</div>
-          <p>„Výmena notebookov a interaktívnych tabúľ prebehla hladko a načas.“</p>
-          <strong>Gymnázium Nové Mesto</strong>
-          <span>Google Business</span>
+        <article class="review" data-reveal>
+          <h3>45%</h3>
+          <p>Rýchlejšie riešenie incidentov.</p>
         </article>
-        <article class="testimonial">
-          <div class="stars">★★★★★</div>
-          <p>„Máme jasný plán obnovy techniky a všetko ide podľa dohôd.“</p>
-          <strong>ZŠ Hurbanova</strong>
-          <span>Referencie</span>
+        <article class="review" data-reveal>
+          <h3>35%</h3>
+          <p>Vyššia produktivita IT koordinátorov.</p>
         </article>
-        <article class="testimonial">
-          <div class="stars">★★★★★</div>
-          <p>„Rýchle zásahy a profesionálna komunikácia s vedením školy.“</p>
-          <strong>SOŠ ekonomická</strong>
-          <span>Google Business</span>
+        <article class="review accent" data-reveal>
+          <h3>€45k</h3>
+          <p>Priemerná ročná úspora na rozpočte IT.</p>
         </article>
       </div>
     </section>
@@ -392,11 +281,10 @@
     <section id="faq" class="section faq">
       <div class="container faq-layout">
         <div class="faq-intro">
-          <p class="tag">FAQ</p>
-          <h2>Otázky, na ktoré odpovedáme na rovinu.</h2>
-          <p>Máte ďalšie otázky? Napíšte nám a radi vám poradíme.</p>
-          <a class="btn ghost" href="#contact">Opýtať sa</a>
-          <span class="faq-count">05 otázok</span>
+          <span class="tag">FAQ</span>
+          <h2>Často kladené otázky</h2>
+          <p>Nejasnosti? Tu sú odpovede na najčastejšie otázky.</p>
+          <a class="btn ghost" href="#contact">Spýtať sa</a>
         </div>
         <div class="faq-grid">
           <details open>
@@ -415,10 +303,6 @@
             <summary>Je možné integrovať Google Business recenzie?</summary>
             <p>Áno, recenzie vieme načítavať automaticky a spravovať ich v administrácii.</p>
           </details>
-          <details>
-            <summary>Ako často robíte servisné výjazdy?</summary>
-            <p>Frekvencia závisí od zvoleného balíka a potrieb školy, zvyčajne 1–4× mesačne.</p>
-          </details>
         </div>
       </div>
     </section>
@@ -426,7 +310,7 @@
     <section id="contact" class="section contact">
       <div class="container contact-grid">
         <div>
-          <p class="tag">Kontakt</p>
+          <span class="tag">Kontakt</span>
           <h2>Prvý klik smeruje na kontakt. Začnime konzultáciou.</h2>
           <p>
             Vyplňte formulár a ozveme sa s konkrétnym návrhom. Správy doručujeme priamo na e-mail.
@@ -470,9 +354,9 @@
     </section>
 
     <section class="section newsletter">
-      <div class="container newsletter-card">
+      <div class="container newsletter-card" data-reveal>
         <div>
-          <p class="tag">Newsletter</p>
+          <span class="tag">Newsletter</span>
           <h2>Zostaňte v obraze o školskom IT.</h2>
           <p>Tipy, novinky a praktické rady pre riaditeľov a IT koordinátorov.</p>
         </div>
